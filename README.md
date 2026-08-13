@@ -13,5 +13,10 @@ iii) HOD: HOD's role will be to examine the overall performances of classes to s
 #UI Flow:
 Home Page → Login Page → Enter College ID → Receive OTP on registered phone → Enter OTP → Gain role-based access → HOD Dashboard / Faculty Dashboard / Students Dashboard
 
+#Applications
+>Secure student access (authentication using OTP will reduce chances of breach)
+>Digital CT marks management
+>Students and teachers can track the overall performance
+>Automated result
 
 
