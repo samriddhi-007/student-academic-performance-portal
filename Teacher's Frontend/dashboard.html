@@ -1,0 +1,135 @@
+<html>
+
+<head>
+    <title>Teacher's Dashboard</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Internal Assessment</h1>
+        <p>Teacher Portal</p>
+    </header>
+
+    <nav>
+        <a href="">Dashboard</a>
+        <a href="">Logout</a>
+    </nav>
+
+    <main>
+
+        <h2>Teacher Dashboard</h2>
+        <p>Welcome, Teacher!</p>
+
+        <section>
+
+            <h3>Select Class Details</h3>
+
+            <label>College Year:</label>
+            <select id="collegeYear" onchange="updateSubjects()">
+                <option value="">Select Year</option>
+                <option>First Year</option>
+                <option>Second Year</option>
+                <option>Third Year</option>
+                <option>Fourth Year</option>
+            </select>
+
+            <br><br>
+
+            <label>Department:</label>
+            <select id="department">
+                <option value="">Select Department</option>
+                <option>Computer Science</option>
+                <option>Data Science</option>
+                <option>AI ML</option>
+            </select>
+
+            <br><br>
+
+            <label>Section:</label>
+            <select id="section">
+                <option value="">Select Section</option>
+                <option>Section A</option>
+                <option>Section B</option>
+            </select>
+
+            <br><br>
+
+            <label>Subject:</label>
+            <select id="subject">
+                <option value="">Select Subject</option>
+            </select>
+
+            <br><br>
+
+            <label>Assessment:</label>
+            <select id="assessment">
+                <option value="">Select CT</option>
+                <option>CT1</option>
+                <option>CT2</option>
+            </select>
+
+            <br><br>
+
+            <button type="button" onclick="showStudents()">
+                Get Student List
+            </button>
+
+        </section>
+
+
+        <section id="studentList" style="display: none;">
+
+            <h3>Student List</h3>
+
+            <table border="1">
+
+                <thead>
+                    <tr>
+                        <th>Roll Number</th>
+                        <th>Student Name</th>
+                        <th>Marks</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+
+                    <tr>
+                        <td>101</td>
+                        <td>Student A</td>
+                        <td>
+                            <input type="number" min="0" max="40" step="1" required>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>102</td>
+                        <td>Student B</td>
+                        <td>
+                            <input type="number" min="0" max="40" step="1" required>
+                        </td>
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+            <br><br>
+
+            <button type="button" onclick="saveDraft()">
+                Save Draft
+            </button>
+
+            <button type="button" onclick="publishMarks()">
+                Publish Marks
+            </button>
+
+        </section>
+
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
